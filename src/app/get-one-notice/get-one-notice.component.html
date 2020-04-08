@@ -1,0 +1,21 @@
+<div class="container" role="main">
+
+  <H2>Get by Id </H2>
+
+  <form>
+    <label for="getOne">Get one:</label>
+    <input [(ngModel)]="id" type="number" id="getOne" name="getOne" required>
+    <button type="submit" (click)="getById(id)">Get one</button>
+  </form>
+
+  <div *ngIf="noteBook !=null">
+    <h2>NoteBook id: {{noteBook.id}}</h2>
+    <ul>
+      <li>Notice id:{{noteBook.id}} </li>
+      <li>Notice title: {{noteBook.title}}</li>
+      <li>Notice text: {{noteBook.text}}</li>
+    </ul>
+
+  </div>
+
+</div>

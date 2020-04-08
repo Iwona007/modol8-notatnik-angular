@@ -1,0 +1,16 @@
+<H2>Delete Notice</H2>
+<div class="content" role="main">
+
+  <form>
+  <label for="id">Notice id:</label>
+  <input [(ngModel)]="id" type="number" id="id" name="id" required>
+  <button type="submit" (click)="deleteById(id)"> Delete</button>
+  </form>
+
+  <div *ngIf="isNoteBookDelete == true">
+    <h2>Notice id: {{id}} has been deleted</h2>
+  </div>
+
+
+</div>
+

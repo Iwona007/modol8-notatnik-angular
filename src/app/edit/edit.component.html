@@ -1,0 +1,28 @@
+<H2>Edit notice</H2>
+
+<div>
+
+  <form  class="example-form" (ngSubmit)="editNotice()" >
+    <label for="id">Notice id:</label>
+    <input [(ngModel)]="editNoteBook.id" type="number" id="id" name="id" required>
+
+    <label for="title"> Notice title:</label>
+    <input [(ngModel)]="editNoteBook.title" type="text" id="title" name="title" required>
+
+    <label  for="text"> Notice text</label>
+    <input [(ngModel)]="editNoteBook.text" type="text" id="text" name="text" required>
+
+    <button  type="submit"  mat-button color="primary">Save</button>
+
+  </form>
+
+</div>
+
+<div *ngIf="editNoteBook != null">
+<h2>Edited</h2>
+  <ul>
+    <li>Notice id: {{editNoteBook.id}}</li>
+    <li>Notice title: {{editNoteBook.title}}</li>
+    <li>Notice text: {{editNoteBook.text}}</li>
+  </ul>
+</div>

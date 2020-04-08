@@ -1,0 +1,27 @@
+<p>Add notice</p>
+
+<div class="content" role="main">
+  <form (ngSubmit)="addNote()">
+    <label for="id">Notice Id: </label>
+    <input [(ngModel)]="newNotice.id" type="number" id="id" name="id" required>
+
+    <!--  <button (click)="addNote()">Add notice</button>-->
+
+    <label for="title"> Title: </label>
+    <input [(ngModel)]="newNotice.title" typ="text" id="title" name="title" required>
+
+    <label for="text">Text:</label>
+    <input [(ngModel)]="newNotice.text" type="text" id="text" name="text" required>
+
+    <button type="submit"> Save</button>
+  </form>
+
+  <div *ngIf="newNotice != notice">
+  <h2> Add Notice</h2>
+  <ul>
+    <li>Notice Id: {{newNotice.id}}</li>
+    <li>Title: {{newNotice.title}}</li>
+    <li>Text: {{newNotice.text}}</li>
+  </ul>
+</div>
+</div>

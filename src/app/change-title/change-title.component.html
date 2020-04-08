@@ -1,0 +1,24 @@
+<H2>Change title</H2>
+
+<div>
+<form  class="example-form" (ngSubmit)="changText()" >
+  <label for="id">Notice id:</label>
+  <input [(ngModel)]="titleToChange.id" type="number" id="id" name="id" required>
+
+  <label for="title"> Notice text:</label>
+  <input [(ngModel)]="titleToChange.text" type="text" id="title" name="title" required>
+
+  <button  type="submit" >Save</button>
+
+</form>
+</div>
+
+<div *ngIf="titleToChange!= null">
+  <h2>Edited</h2>
+  <ul>
+    <li>Notice id: {{titleToChange.id}}</li>
+    <li>Notice text: {{noteBook.title}}</li>
+    <li>Notice title: {{titleToChange.text}}</li>
+
+  </ul>
+</div>

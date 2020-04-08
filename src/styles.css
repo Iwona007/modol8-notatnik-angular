@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+  text-align: center;
+  color: black;
+  font-family: helvetica;
+  background: powderblue;
+}
+
+.card {
+  border-radius: 20px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 20px;
+  width: 150px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+
+button {
+  border-radius: 10px;
+  height: 30px;
+  width: 150px;
+}
+
+input {
+  border-radius: 10px;
+  height: 20px;
+  width: 150px;
+  /*align-items: center;*/
+  /*display: inline-flex;*/
+  /*justify-content: center;*/
+  font-style: normal;
+  padding: 5px;
+  font-sizie: 10px;
+
+}
+
+ul {
+  display: inline-list-item;
+  list-style-type: circle;
+  font-sizie: 10px;
+}
+
+label{
+  /*  border: 0px;*/
+  /*  padding: 5px;*/
+    font-sizie: 10px;
+  ;
+}
+li {
+  display: inline-list-item;
+  font-sizie: 10px;
+
+}
+
+label {
+  display: inline-list-item;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+  margin: .4rem 0;
+}
+.content {
+  display: flex;
+  margin: 32px auto;
+  padding: 0 16px;
+  /*max-width: 960px;*/
+  flex-direction: column;
+  align-items: center;
+}
+
