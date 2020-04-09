@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GetAllNoticeComponent } from './get-all-notice.component';
+import { ChangeNoticeComponent } from './change-notice.component';
 
-describe('GetAllNoticeComponent', () => {
-  let component: GetAllNoticeComponent;
-  let fixture: ComponentFixture<GetAllNoticeComponent>;
+describe('ChangeNoticeComponent', () => {
+  let component: ChangeNoticeComponent;
+  let fixture: ComponentFixture<ChangeNoticeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GetAllNoticeComponent ]
+      declarations: [ ChangeNoticeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GetAllNoticeComponent);
+    fixture = TestBed.createComponent(ChangeNoticeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

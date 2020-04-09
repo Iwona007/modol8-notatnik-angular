@@ -13,5 +13,6 @@ export class AppComponent {
 export interface NoteBook {
   id?: number;
   title?: string;
-  text?: string;
+  notice?: string;
+  date?: string;
 }

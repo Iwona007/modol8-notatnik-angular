@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {NoteBook} from '../app.component';
-import {NoteService} from '../services/note.service';
+import {NoteBookService} from '../service/note-book.service';
 
 @Component({
   selector: 'app-delete',
@@ -13,7 +12,7 @@ export class DeleteComponent implements OnInit {
   id: number;
   isNoteBookDelete: boolean = false;
 
-  constructor(private noteService: NoteService) {
+  constructor(private noteBookService: NoteBookService) {
   }
 
   ngOnInit(): void {
@@ -21,7 +20,7 @@ export class DeleteComponent implements OnInit {
   }
 
   deleteById(id: number) {
-    this.noteService.deleteById(this.id).subscribe((noteBook) => {
+    this.noteBookService.deleteById(this.id).subscribe((noteBook) => {
       // return this.noteBook = noteBook;
       console.log();
     });

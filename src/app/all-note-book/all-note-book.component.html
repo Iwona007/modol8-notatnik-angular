@@ -1,14 +1,15 @@
+
 <div class="content" role="main">
 
-  <h2>Get All Notice:</h2>
+  <h2>Get All Note Book:</h2>
 
   <div *ngFor="let noteBook of noteBooks">
     <ul>
       <li>Notice Id: {{noteBook.id}}</li>
       <li>Title: {{noteBook.title}}</li>
-      <li>Text: {{noteBook.text}}</li>
+      <li>Notice: {{noteBook.notice}}</li>
+      <li>Date: {{noteBook.date}}</li>
     </ul>
   </div>
 
 </div>
-

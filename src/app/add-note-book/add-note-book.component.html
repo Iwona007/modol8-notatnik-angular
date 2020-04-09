@@ -1,0 +1,31 @@
+<p>Add NoteBook</p>
+
+<div class="content" role="'main">
+  <form (ngSubmit)="addNoteBook()">
+    <label for="id">NoteBook Id: </label>
+    <input [(ngModel)]="newNoteBook" type="number" id="id" name="id" readonly>
+
+    <label for="title"> Title: </label>
+    <input [(ngModel)]="newNoteBook.title" typ="text" id="title" name="title" required>
+
+    <label for="text">Notice: </label>
+    <input [(ngModel)]="newNoteBook.notice" type="text" id="text" name="notice" required>
+
+    <label for="date">Date: </label>
+    <input [(ngModel)]="newNoteBook.date" type="date" id="date" name="date" required>
+
+
+    <button type="submit"> Save</button>
+  </form>
+
+
+  <div *ngIf="newNoteBook != noteBook">
+    <h2> Add Notice</h2>
+    <ul>
+      <li>NoteBook Id: {{newNoteBook.id}}</li>
+      <li>Title: {{newNoteBook.title}}</li>
+      <li>Notice: {{newNoteBook.notice}}</li>
+      <li>Date: {{newNoteBook.date}}</li>
+    </ul>
+  </div>
+</div>

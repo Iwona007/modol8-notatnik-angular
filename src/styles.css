@@ -32,9 +32,6 @@ input {
   border-radius: 10px;
   height: 20px;
   width: 150px;
-  /*align-items: center;*/
-  /*display: inline-flex;*/
-  /*justify-content: center;*/
   font-style: normal;
   padding: 5px;
   font-sizie: 10px;
@@ -42,32 +39,21 @@ input {
 }
 
 ul {
-  display: inline-list-item;
+  display: inline-block;
   list-style-type: circle;
   font-sizie: 10px;
 }
 
 label{
-  /*  border: 0px;*/
-  /*  padding: 5px;*/
     font-sizie: 10px;
-  ;
 }
-li {
-  display: inline-list-item;
-  font-sizie: 10px;
 
-}
 
 label {
   display: inline-list-item;
-  font: 1rem 'Fira Sans', sans-serif;
+  /*font: 1rem 'Fira Sans', sans-serif;*/
 }
 
-input,
-label {
-  margin: .4rem 0;
-}
 .content {
   display: flex;
   margin: 32px auto;

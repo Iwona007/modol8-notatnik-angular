@@ -1,33 +1,33 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {AddNoticeComponent} from './add-notice/add-notice.component';
-import {GetAllNoticeComponent} from './get-all-notice/get-all-notice.component';
-import {GetOneNoticeComponent} from './get-one-notice/get-one-notice.component';
 import {DeleteComponent} from './delete/delete.component';
 import {EditComponent} from './edit/edit.component';
-import {ChangeTitleComponent} from './change-title/change-title.component';
+import {AddNoteBookComponent} from './add-note-book/add-note-book.component';
+import {AllNoteBookComponent} from './all-note-book/all-note-book.component';
+import {GetOneComponent} from './get-one/get-one.component';
+import {ChangeNoticeComponent} from './change-notice/change-notice.component';
 
 
 const routes: Routes = [
   {
-    path: 'add-notice',
-    component: AddNoticeComponent
+    path: 'add-note-book',
+    component: AddNoteBookComponent
   },
   {
-    path: 'get-all-notice',
-    component: GetAllNoticeComponent
+    path: 'all-note-book',
+    component: AllNoteBookComponent
   },
   {
-    path: 'get-one-notice',
-    component: GetOneNoticeComponent
+    path: 'get-one',
+    component: GetOneComponent
   },
   {
     path: 'edit',
     component: EditComponent
   },
   {
-    path: 'change-title',
-    component: ChangeTitleComponent
+    path: 'change-notice',
+    component: ChangeNoticeComponent
   },
   {
     path: 'delete',

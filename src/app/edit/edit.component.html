@@ -2,17 +2,20 @@
 
 <div>
 
-  <form  class="example-form" (ngSubmit)="editNotice()" >
-    <label for="id">Notice id:</label>
+  <form  class="example-form" (ngSubmit)="changeNoteBook()" >
+    <label for="id">NoteBook id:</label>
     <input [(ngModel)]="editNoteBook.id" type="number" id="id" name="id" required>
 
-    <label for="title"> Notice title:</label>
+    <label for="title"> NoteBook title:</label>
     <input [(ngModel)]="editNoteBook.title" type="text" id="title" name="title" required>
 
-    <label  for="text"> Notice text</label>
-    <input [(ngModel)]="editNoteBook.text" type="text" id="text" name="text" required>
+    <label  for="notice"> NoteBook text</label>
+    <input [(ngModel)]="editNoteBook.notice" type="text" id="notice" name="text" required>
 
-    <button  type="submit"  mat-button color="primary">Save</button>
+    <label  for="date"> NoteBook text</label>
+    <input [(ngModel)]="editNoteBook.date" type="date" id="date" name="date" required>
+
+    <button  type="submit" >Save</button>
 
   </form>
 
@@ -21,8 +24,9 @@
 <div *ngIf="editNoteBook != null">
 <h2>Edited</h2>
   <ul>
-    <li>Notice id: {{editNoteBook.id}}</li>
-    <li>Notice title: {{editNoteBook.title}}</li>
-    <li>Notice text: {{editNoteBook.text}}</li>
+    <li>NoteBook id: {{editNoteBook.id}}</li>
+    <li>NoteBook title: {{editNoteBook.title}}</li>
+    <li>NoteBook notice: {{editNoteBook.notice}}</li>
+    <li>NoteBook date: {{editNoteBook.date}}</li>
   </ul>
 </div>
