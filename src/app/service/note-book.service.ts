@@ -27,7 +27,7 @@ export class NoteBookService {
   }
 
   changeNotice(noteBook: NoteBook): Observable<NoteBook> {
-    return this.httpClient.patch('http://localhost:8080/notice/text/' + noteBook.id, noteBook);
+    return this.httpClient.patch('http://localhost:8080/notice/notice/' + noteBook.id, noteBook);
   }
 
   deleteById(id: number): Observable<NoteBook> {
