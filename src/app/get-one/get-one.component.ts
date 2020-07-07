@@ -16,7 +16,7 @@ export class GetOneComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getById(this.id);
+
   }
 
   getById(id: number) {

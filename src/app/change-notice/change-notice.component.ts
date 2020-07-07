@@ -16,7 +16,7 @@ export class ChangeNoticeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.changNotice();
+    // this.changNotice();
   }
 
   changNotice() {

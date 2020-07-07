@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {NoteBookService} from '../service/note-book.service';
+import {NoteBook} from '../app.component';
 
 @Component({
   selector: 'app-delete',
@@ -8,7 +9,7 @@ import {NoteBookService} from '../service/note-book.service';
 })
 export class DeleteComponent implements OnInit {
 
-  // noteBook: NoteBook;
+  noteBook: NoteBook;
   id: number;
   isNoteBookDelete: boolean = false;
 
@@ -16,17 +17,14 @@ export class DeleteComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.deleteById(this.id);
   }
 
   deleteById(id: number) {
-    this.noteBookService.deleteById(this.id).subscribe((noteBook) => {
-      // return this.noteBook = noteBook;
+    this.noteBookService.deleteById(id).subscribe((noteBook) => {
+      return this.noteBook = noteBook;
       console.log();
     });
     this.isNoteBookDelete = true;
 
   }
-
-
 }
