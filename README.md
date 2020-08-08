@@ -9,13 +9,13 @@ This is frontend for my application in backend:
  please see: https://github.com/Iwona007/modol8-notatnik
 
 img: postman add new notice:
-![App_image](src/main/resources/img/add-new.PNG)
+![App_image](https://github.com/Iwona007/modol8-notatnik-angular/blob/master/src/img/add-new.PNG)
 
 img: angular add new notice:
-![App_image](src/main/resources/img/angular-add-new.PNG)
+![App_image](https://github.com/Iwona007/modol8-notatnik-angular/blob/master/src/img/angular-add-new.PNG)
 
 img: view in remote MySql
-![App_image](src/main/resources/img/DB-note_books.PNG)
+![App_image](https://github.com/Iwona007/modol8-notatnik-angular/blob/master/src/img/DB-note_books.PNG)
 
 img: postman advice for not fund exception: 404
 ![App_image](src/main/resources/img/status-404-advice.PNG)
