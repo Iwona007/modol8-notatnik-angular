@@ -22,7 +22,10 @@ export class AddNoteBookComponent implements OnInit {
     this.noteBookService.addNoteBook(this.newNoteBook).subscribe((noteBook) => {
       this.newNoteBook = noteBook;
       console.log(noteBook);
-    });
+    },
+      error => {
+        console.log(error);
+      });
   }
 }
 

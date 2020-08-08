@@ -11,7 +11,7 @@ export class DeleteComponent implements OnInit {
 
   noteBook: NoteBook;
   id: number;
-  isNoteBookDelete: boolean = false;
+  isNoteBookDelete = false;
 
   constructor(private noteBookService: NoteBookService) {
   }
@@ -25,6 +25,5 @@ export class DeleteComponent implements OnInit {
       console.log();
     });
     this.isNoteBookDelete = true;
-
   }
 }
