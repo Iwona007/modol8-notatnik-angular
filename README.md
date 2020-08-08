@@ -18,5 +18,5 @@ img: view in remote MySql
 ![App_image](https://github.com/Iwona007/modol8-notatnik-angular/blob/master/src/img/DB-note_books.PNG)
 
 img: postman advice for not fund exception: 404
-![App_image](src/main/resources/img/status-404-advice.PNG)
+![App_image](https://github.com/Iwona007/modol8-notatnik-angular/blob/master/src/img/status-404-advice.PNG)
 
